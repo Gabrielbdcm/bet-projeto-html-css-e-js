@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BET</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-ponta">
+      <img src="img/logo.png" alt="Logo" />
+    </div>
+
+    <div class="nav-center">
+      <a onclick="home()" href="#">Home</a>
+      <a onclick="cassino()" href="#">Casino</a>
+      <a onclick="esporte()" href="#">Esportes</a>
+      <a onclick="recarga()" href="#">Recarga</a>
+    </div>
+
+    <div class="nav-ponta">
+      <button id="entrar">Entrar</button>
+      <button id="cadastrar">Cadastrar</button>
+    </div>
+  </nav>
+
+  <hr />
+<div class="carteira">
+  <h2>Saldo:</h2> 
+  <h4>R$ 0,00</h4>
+</div>
+  <div id="todo" style="display: none;">
+    <h1>BetBosta — o único cassino que fede mais que seu azar!</h1>
+
+    <div class="container">
+      <h2>Bem-vindo à BetBosta!</h2>
+      <h3>cadastre-se agora na Bet mais bosta do brasil!</h3>
+      <button>Cadastrar</button>
+      <img src="img/cavalop.png" />
+    </div>
+
+    <div class="cassino">
+      <h3>Cassino</h3>
+      <p>Aproveita nossos jogos exclusivos!</p>
+      <button onclick="cassino()">Jogar</button>
+    </div>
+
+    <div class="esporte">
+      <h3>Esportes</h3>
+      <p>
+        Nossas apostas completamentes intuitivas são perfeitas para
+        jogadores com pouca capacidade cognitiva (deficiente)
+      </p>
+      <button>Jogar</button>
+    </div>
+  </div>
+
+    <div class="ijogo" style="display: none;">
+      <h2>Cara ou coroa?</h2>
+      <p>
+         Nesse jogo você escolherá uma face da moeda,
+         ou seja: cara ou coroa. Um algoritmo
+         perfeitamente programado e indiscutivelmente 
+         honesto sorteará uma face. Caso você acerte 
+         a sua aposta, ela será dobrada.
+      </p>
+      <h3>quanto deseja apostar?</h3>
+      <input type="number" placeholder="R$ 0,00" id="inputap">
+      <button type="submit" onclick="injogar()" id="aposta">Apostar</button>
+      <div id="resultado"></div>
+    </div>
+    <div class="recarga" style="display: none;">
+      <h1>Área de recarga</h1>
+      <div class="arecarga">
+        <center><h2>Recarga</h2></center>
+        <h3 style="margin-top: 15px;">Quanto deseja recarregar?</h3>
+        <input type="number" id="inputar" placeholder="R$ 0,00"> <button onclick="recarregar()">Recarregar</button>
+      </div>
+    </div>
+
+</body>
+</html>
