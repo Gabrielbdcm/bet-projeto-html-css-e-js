@@ -1,0 +1,263 @@
+body {
+      background: url(../assets/fundo.png);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: aliceblue;
+    }
+
+    h1 {
+      font-family: 'Poetsen One', cursive;
+      font-size: xx-large;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    .nav-ponta {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-center {
+      display: flex;
+      align-items: center;
+      gap: 110px;
+    }
+
+    nav img {
+      max-width: 100px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      font-size: larger;
+      cursor: pointer;
+    }
+
+    .container button,
+    nav button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100px;
+      height: 40px;
+    }
+
+    nav button:hover {
+      transform: scale(1.1);
+      background-color: rgb(162, 124, 26);
+    }
+
+    #entrar {
+      background-color: rgb(162, 124, 26);
+    }
+    #entrar:hover {
+      background-color: white;
+    }
+
+    .container {
+      background-color: rgb(159, 157, 157);
+      color: black;
+      max-width: 900px;
+      border-radius: 10px;
+      position: relative;
+      margin: 0 auto;
+      height: 300px;
+      padding: 5px 10px;
+    }
+
+    .container h1,
+    .container h2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50px;
+    }
+
+    .container button:hover {
+      transition: scale(1.1);
+      transform: scale(1.1);
+      background-color: red;
+    }
+
+    .container button {
+      margin-top: 100px;
+      margin-left: 10px;
+    }
+
+    .container img {
+      float: right;
+      max-width: 600px;
+      margin-top: -163px;
+      margin-right: 25px;
+    }
+
+    .cassino,
+    .esporte {
+      max-width: 550px;
+      background-color: grey;
+      padding: 5px 10px;
+      margin-top: 20px;
+      border-radius: 10px;
+      height: 180px;
+      color: black;
+    }
+
+    .esporte {
+      float: right;
+      margin-top: -190px;
+      margin-right: 180px;
+    }
+
+    .cassino {
+      margin-left: 180px;
+    }
+
+    .cassino button,
+    .esporte button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100px;
+      height: 40px;
+      margin-top: 10px;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    .cassino button:hover,
+    .esporte button:hover {
+      background-color: red;
+      transform: scale(1.1);
+    }
+
+    .scassino {
+      background-color: #222;
+      border: 2px solid rgb(255, 222, 8);
+      border-radius: 15px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 20px rgb(213, 228, 14);
+    }
+
+    .scassino h1 {
+      color: rgb(253, 253, 253);
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .jogo h2 {
+      color: rgb(243, 243, 239);
+    }
+
+    .jogo p {
+      margin: 20px 0 10px;
+    }
+    .recarga button,
+    .ijogo button,
+    .scassino button {
+      font-size: 18px;
+      margin: 10px;
+      padding: 10px 20px;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+    .recarga button{
+      background-color: #22c55e;
+    }
+    .scassino button {
+       background: rgb(175, 180, 9);
+    }
+    .scassino button:hover {
+      background: #eaeaea;
+    }
+
+    #resultado {
+      margin-top: 30px;
+      font-size: 20px;
+      color: red;
+    }
+
+    #scassino {
+      display: none;
+    }
+    .ijogo button{
+      background-color: red; 
+    }
+    #inputap,
+    #inputar{
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    }
+    #inputap{
+    border: 2px solid #db1414;
+    }
+    #inputar{
+       border: 2px solid #22c55e;
+    }
+    .ijogo p{
+      max-width: 800px;
+    }
+    .ijogo{
+      border: rgb(92, 6, 6) solid;
+      border-radius: 10px;
+      max-width: 850px;
+      padding: 30px;
+      margin: 0 auto;
+    }
+    .carteira{
+      background-color: #1e1e1e;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #c67716;
+    position: fixed;
+    transition: opacity 0.4s ease, visibility 0.4s ease;;
+    }
+    .carteira:hover{
+      opacity: 0;
+      visibility: hidden;
+    }
+    .carteira h2,
+    .carteira h4{
+      margin-left: 5px;
+    }
+    .arecarga{
+      border: solid rgb(0, 0, 0);
+      max-width: 550px;
+      margin:  auto;
+      padding: 15px;
+    }
+    
